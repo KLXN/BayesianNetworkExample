@@ -55,13 +55,13 @@ engine = jtree_inf_engine(bnet);
 
 %% Defining observed evidence
 evidence = cell(1,N);
-evidence{nodeD} = 2; %false = 1; true = 2; We are looking
+evidence{nodeD} = 2; %false = 1; true = 2; We observed that this node is true;
+evidence{nodeC} = 2;
 
 %% Connecting evidence and engine
 [engine, loglik] = enter_evidence(engine, evidence);
 
 %% Computing probability
-marg = marginal_nodes(engine, nodeB);
-marg.T
-pFalse = marg.T(1); %probability that it's not true
-pTrue = marg.T(2); % probability that it's true
+marg = marginal_nodes(engine, nodeB); %We are looking for case when this node is true
+pFalse = marg.T(1) %probability that it's not true
+pTrue = marg.T(2) % probability that it's true
