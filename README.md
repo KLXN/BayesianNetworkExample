@@ -7,4 +7,4 @@ Hardcoded example is represented by graph below.
 
 <img src="https://raw.github.com/KLXN/BayesianNetworkExample/master/graph.png" />
 
-Image and Example copyrights: Gautam Shroff
+<i>Image and Example source: "Journal of the Royal Statistical Society" S. L. Lauritzen and D. J. Spiegelhalter</i>
